@@ -37,22 +37,24 @@ export default function Home() {
       </header>
       <main>
         <table className="w-11/12 mx-auto text-center">
-          <tr>
-            <td>教科名</td>
-            <td>{selectedSubject.id}</td>
-          </tr>
-          <tr>
-            <td>単位数</td>
-            <td>{selectedSubject.param_2}</td>
-          </tr>
-          <tr>
-            <td>あああ</td>
-            <td>{selectedSubject.param_3}</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-          </tr>
+          <tbody>
+            <tr>
+              <td>教科名</td>
+              <td>{selectedSubject.id}</td>
+            </tr>
+            <tr>
+              <td>単位数</td>
+              <td>{selectedSubject.param_2}</td>
+            </tr>
+            <tr>
+              <td>あああ</td>
+              <td>{selectedSubject.param_3}</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
         </table>
       </main>
     </div>

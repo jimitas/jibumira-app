@@ -20,7 +20,7 @@
 }
 
 .cp_ipselect.cp_sl03::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0.8em;
   right: 0.8em;
@@ -36,3 +36,5 @@
   padding: 0.5rem 2.5rem 0.5rem 0.5rem;
   color: #da3c41;
 }
+
+

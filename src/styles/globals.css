@@ -16,4 +16,10 @@
     min-height: calc(100vh - 8rem);
     user-select: none;
   }
+  
+  td {
+    border: solid 1px black;
+  }
+
 }
+

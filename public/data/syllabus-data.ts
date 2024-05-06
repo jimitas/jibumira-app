@@ -16,12 +16,12 @@ const subjects: Subject[] = [
     category: '必修・履修',
     textbook: '新編情報Ⅰ（東京書籍）',
   },
-  {
-    id: 'subject2',
-    subject_class: 'Subject 2 Param 1',
-    credit: 2,
-    category: 'Subject 2 Param 3',
-  },
+  // {
+  //   id: 'subject2',
+  //   subject_class: 'Subject 2 Param 1',
+  //   credit: 2,
+  //   category: 'Subject 2 Param 3',
+  // },
   // 他のダミーデータを追加
 ];
 

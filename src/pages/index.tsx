@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import subjects, { Subject } from "../../public/data/syllabus-data";
+import styles from "./index.module.css";
 
 export default function Home() {
   const [selectedSubject, setSelectedSubject] = useState<Subject>(subjects[0]);
@@ -16,13 +17,23 @@ export default function Home() {
     <div>
       <header>
         <h1>Syllabus Viewer</h1>
-        <select value={selectedSubject.id} onChange={handleSubjectChange}>
-          {subjects.map((subject) => (
-            <option key={subject.id} value={subject.id}>
-              {subject.id}
+        <div className={`${styles.cp_ipselect} ${styles.cp_sl03} overflow-hidden w-11/12 mx-auto text-center`}>
+          <select
+            className="w-full cursor-pointer text-transparent appearance-none bg-transparent"
+            value={selectedSubject.id}
+            onChange={handleSubjectChange}
+          >
+            {" "}
+            <option value="" disabled hidden>
+              教科を選択してください。
             </option>
-          ))}
-        </select>
+            {subjects.map((subject) => (
+              <option key={subject.id} value={subject.id}>
+                {subject.id}
+              </option>
+            ))}
+          </select>
+        </div>
       </header>
       <main>
         <h2>{selectedSubject.id}</h2>

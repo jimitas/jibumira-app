@@ -20,7 +20,7 @@ export interface Subject {
 
 const subjects: Subject[] = [
   {
-    id: '数学Ⅰ',
+    id: '情報Ⅰ',
     subject_class: '普通科目',
     credit: 3,
     category: '必修・履修',

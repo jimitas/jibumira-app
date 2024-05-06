@@ -43,10 +43,10 @@ export default function Home() {
       <main>
         {selectedSubject && (
           <div>
-            <table className="w-11/12 mx-auto text-center">
+            <table className="w-11/12 mx-auto">
               <tbody>
                 <tr>
-                  <td>教科名</td>
+                  <td className="w-3/12">教科名</td>
                   <td>{selectedSubject.id}</td>
                 </tr>
                 <tr>
@@ -63,19 +63,25 @@ export default function Home() {
                 </tr>
                 <tr>
                   <td>副教材</td>
-                  <td>{selectedSubject.textbook}</td>
+                  <td>{selectedSubject.sub_textbook}</td>
                 </tr>
                 <tr>
                   <td>講師名</td>
-                  <td>{selectedSubject.textbook}</td>
+                  <td>{selectedSubject.teacher}</td>
                 </tr>
                 <tr>
-                  <td>授業の概要</td>
-                  <td>{selectedSubject.textbook}</td>
+                  <td>授業の概要・目的</td>
+                  <td>{selectedSubject.summary}</td>
                 </tr>
                 <tr>
-                  <td>履修上の留意点</td>
-                  <td>{selectedSubject.textbook}</td>
+                  <td>到達目標</td>
+                  <td>
+                    <ul className="px-5 list-disc">
+                      <li>{selectedSubject.gole_1}</li>
+                      <li>{selectedSubject.gole_2}</li>
+                      <li>{selectedSubject.gole_3}</li>
+                    </ul>
+                  </td>
                 </tr>
                 <tr>
                   <td>成績評価の方法</td>

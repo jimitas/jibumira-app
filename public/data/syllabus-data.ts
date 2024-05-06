@@ -5,7 +5,13 @@ export interface Subject {
   subject_class: string;
   credit: number;
   category: string;
-  textbook:string;
+  textbook: string;
+  sub_textbook: string;
+  teacher: string;
+  summary: string;
+  gole_1: string;
+  gole_2: string;
+  gole_3: string;
 }
 
 const subjects: Subject[] = [
@@ -15,6 +21,12 @@ const subjects: Subject[] = [
     credit: 3,
     category: '必修・履修',
     textbook: '新編情報Ⅰ（東京書籍）',
+    sub_textbook: 'なし',
+    teacher: '野中　孝利',
+    summary: '　多くの情報に囲まれた現代社会においては、必要な情報を選択し、その真偽を判断し、最適な行動を選択できる情報活用能力をはじめ、問題解決のために主体的に情報と情報技術を活用し、自ら評価し、改善しようとする態度や創造性が必要です。これらの力を身に付けるための知識と技術の習得を目指した学習を行います。',
+    gole_1: "自らの生活・学習において、主体的な情報活用ができる。",
+    gole_2: "情報や情報技術の仕組み、あるいは情報の取り扱い方に関する基本的な理論や方法、仕組みを理解する。",
+    gole_3: "情報や情報技術が果たしている役割、及ぼす影響を理解し、情報の正しい扱い方を判断できる。",
   },
   // {
   //   id: 'subject2',

@@ -40,10 +40,11 @@ export default function Home() {
           </select>
         </div>
       </header>
+
       <main>
         {selectedSubject && (
           <div>
-            <table className="w-11/12 mx-auto">
+            <table className="w-11/12 mx-auto my-5">
               <tbody>
                 <tr>
                   <td className="w-3/12">教科名</td>
@@ -82,6 +83,10 @@ export default function Home() {
                       <li>{selectedSubject.gole_3}</li>
                     </ul>
                   </td>
+                </tr>
+                <tr>
+                  <td>履修にあたって</td>
+                  <td>{selectedSubject.message}</td>
                 </tr>
                 <tr>
                   <td>

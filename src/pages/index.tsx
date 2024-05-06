@@ -84,11 +84,29 @@ export default function Home() {
                   </td>
                 </tr>
                 <tr>
-                  <td>成績評価の方法</td>
                   <td>
-                    <ul>{selectedSubject.textbook}</ul>
-                    <ul>{selectedSubject.textbook}</ul>
-                    <ul>{selectedSubject.textbook}</ul>
+                    成績評価の方法
+                    <br />
+                    （観点別評価）
+                  </td>
+                  <td>
+                    <ul className="px-5 list-disc">
+                      <li>
+                        【知識・技能】
+                        <br />
+                        {selectedSubject.evaluation_1}
+                      </li>
+                      <li>
+                        【思考・判断・表現】
+                        <br />
+                        {selectedSubject.evaluation_2}
+                      </li>
+                      <li>
+                        【主体的に学習に取り組む態度】
+                        <br />
+                        {selectedSubject.evaluation_3}
+                      </li>
+                    </ul>
                   </td>
                 </tr>
               </tbody>

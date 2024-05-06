@@ -12,6 +12,9 @@ export interface Subject {
   gole_1: string;
   gole_2: string;
   gole_3: string;
+  evaluation_1:string;
+  evaluation_2:string;
+  evaluation_3:string;
 }
 
 const subjects: Subject[] = [
@@ -27,6 +30,9 @@ const subjects: Subject[] = [
     gole_1: "自らの生活・学習において、主体的な情報活用ができる。",
     gole_2: "情報や情報技術の仕組み、あるいは情報の取り扱い方に関する基本的な理論や方法、仕組みを理解する。",
     gole_3: "情報や情報技術が果たしている役割、及ぼす影響を理解し、情報の正しい扱い方を判断できる。",
+    evaluation_1:"単位認定試験の点数により評価する。",
+    evaluation_2:"単位認定試験の点数により評価する。",
+    evaluation_3:"レポートの提出状況とスクーリングの出席率により評価する。",
   },
   // {
   //   id: 'subject2',

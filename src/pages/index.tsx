@@ -24,7 +24,7 @@ export default function Home() {
             onChange={handleSubjectChange}
           >
             {" "}
-            <option value="" disabled hidden>
+            <option value="" disabled>
               教科を選択してください。
             </option>
             {subjects.map((subject) => (
@@ -44,15 +44,39 @@ export default function Home() {
             </tr>
             <tr>
               <td>単位数</td>
-              <td>{selectedSubject.param_2}</td>
+              <td>{selectedSubject.credit}</td>
             </tr>
             <tr>
-              <td>あああ</td>
-              <td>{selectedSubject.param_3}</td>
+              <td>区分</td>
+              <td>{selectedSubject.category}</td>
             </tr>
             <tr>
-              <td></td>
-              <td></td>
+              <td>教科書</td>
+              <td>{selectedSubject.textbook}</td>
+            </tr>
+            <tr>
+              <td>副教材</td>
+              <td>{selectedSubject.textbook}</td>
+            </tr>
+            <tr>
+              <td>講師名</td>
+              <td>{selectedSubject.textbook}</td>
+            </tr>
+            <tr>
+              <td>授業の概要</td>
+              <td>{selectedSubject.textbook}</td>
+            </tr>
+            <tr>
+              <td>履修上の留意点</td>
+              <td>{selectedSubject.textbook}</td>
+            </tr>
+            <tr>
+              <td>成績評価の方法</td>
+              <td>
+                <ul>{selectedSubject.textbook}</ul>
+                <ul>{selectedSubject.textbook}</ul>
+                <ul>{selectedSubject.textbook}</ul>
+              </td>
             </tr>
           </tbody>
         </table>
